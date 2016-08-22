@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	max-width: 55em;
+	max-width: 450px;
 	margin: 0 auto;
 }
 
@@ -31,7 +31,6 @@ summary {
 }
 
 main {
-	display: flex;
 	margin-top: 2em;
 }
 
@@ -247,4 +246,23 @@ textarea {
 ::-webkit-file-upload-button {
 	-webkit-appearance: button;
 	font: inherit;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+}
+
+header {
+	text-align: center;
+}
+
+nav > a {
+	text-decoration: none;
+	font-size: 1.7em;
+	margin: 0 .4em;
+}
+
+nav > a.active {
+	text-decoration: underline;
 }
