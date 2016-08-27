@@ -5,21 +5,21 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>Standard Deviant Brewing, Menu</title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=512">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="icon" href="img/SDBLogo_SDBsigmaBlack.png">
 	</head>
 	<body itemscope itemtype="http://schema.org/Brewery">
 		<header>
-			<a href="./" itemprop="url">
-				<img class="logo" itemprop="logo" width="350" height="429" src="img/SDBLogoBIG_YellowOnBlack.png" alt="Standard Deviant Brewing">
+			<a class="logo" href="./index.html">
+				<img itemprop="logo" width="350" height="429" src="img/SDBLogoBIG_YellowOnBlack.png" alt="Standard Deviant Brewing">
 				<h1 itemprop="name" hidden>Standard Deviant Brewing</h1>
 			</a>
 
 			<nav>
-				<a href="./">Home</a>
+				<a href="./index.html">Home</a>
 				<a href="./menu.html" class="active">Menu</a>
-				<a href="./photos.html">Photos</a>
+				<!--a href="./photos.html">Photos</a-->
 			</nav>
 		</header>
 
@@ -37,28 +37,33 @@
 		</main>
 
 		<footer>
-			<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-				<span itemprop="streetAddress">280 14th Street</span>
-				<span itemprop="addressLocality">San Francisco</span>,
-				<span itemprop="addressRegion">CA</span>
-				<span itemprop="addressCountry">USA</span>
-				<span itemprop="postalCode">94103</span>
-			</address>
+			<div class="contact">
+				<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress">280 14th Street</span>
+					<span itemprop="addressLocality">San Francisco</span>,
+					<span itemprop="addressRegion">CA</span>
+					<span itemprop="addressCountry">USA</span>
+					<span itemprop="postalCode">94103</span>
 
-			<time itemprop="openingHours" datetime="Fri 16:00-23:00">Fri 4-11</time>,
-			<time itemprop="openingHours" datetime="Sat 12:00-23:00">Sat 12-11</time>,
-			<time itemprop="openingHours" datetime="Sun 12:00-21:00">Sun 12-9</time>
-			<br>
-			Phone: <a itemprop="telephone" href="tel:+14155902250">(415) 590-2550</a>
+					<a itemprop="hasMap" href="https://www.google.com/maps/place/Standard+Deviant+Brewing/@37.768473,-122.421649,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e21474dc681:0xcab142f3b60e8df3!8m2!3d37.768473!4d-122.419455" target="_blank" rel="noopener">Google maps</a>
+				</address>
 
-			<div>
-				<a href="https://www.instagram.com/standarddeviantbrewing/" target="_blank" rel="noopener">Instagram</a>
-				<a href="https://www.facebook.com/standarddeviantbrewing/" target="_blank" rel="noopener">Facebook</a>
+				<time itemprop="openingHours" datetime="Fri 16:00-23:00">Fri 4-11</time>,
+				<time itemprop="openingHours" datetime="Sat 12:00-23:00">Sat 12-11</time>,
+				<time itemprop="openingHours" datetime="Sun 12:00-21:00">Sun 12-9</time>
+				<br>
+				<a itemprop="telephone" href="tel:+14155902250">(415) 590-2550</a>
+			</div>
+
+			<div class="elsewhere">
+				<link itemprop="url" href="http://standarddeviantbrewing.com/">
+				<a itemprop="sameAs" href="https://www.instagram.com/standarddeviantbrewing/" target="_blank" rel="noopener">Instagram</a> •
+				<a itemprop="sameAs" href="https://www.facebook.com/standarddeviantbrewing/" target="_blank" rel="noopener">Facebook</a> •
 				<!--Twitter-->
-				<a href="https://www.yelp.com/biz/standard-deviant-brewing-san-francisco" target="_blank" rel="noopener">Yelp</a>
-				<a href="https://foursquare.com/v/standard-deviant-brewing/575730a3498e1522af37082a" target="_blank" rel="noopener">Foursquare</a>
-				<a href="https://untappd.com/w/standard-deviant-brewing/287511" target="_blank" rel="noopener">untapped</a>
-				<a href="http://www.ratebeer.com/brewers/standard-deviant-brewing/28194/" target="_blank" rel="noopener">ratebeer</a>
+				<a itemprop="sameAs" href="https://www.yelp.com/biz/standard-deviant-brewing-san-francisco" target="_blank" rel="noopener">Yelp</a> •
+				<a itemprop="sameAs" href="https://foursquare.com/v/standard-deviant-brewing/575730a3498e1522af37082a" target="_blank" rel="noopener">Foursquare</a> •
+				<a itemprop="sameAs" href="https://untappd.com/w/standard-deviant-brewing/287511" target="_blank" rel="noopener">untapped</a> •
+				<a itemprop="sameAs" href="http://www.ratebeer.com/brewers/standard-deviant-brewing/28194/" target="_blank" rel="noopener">ratebeer</a>
 			</div>
 		</footer>
 		<!--script src="js/main.js"></script-->

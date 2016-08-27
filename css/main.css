@@ -11,8 +11,9 @@ html {
 }
 
 body {
-	max-width: 450px;
 	margin: 0 auto;
+	max-width: 480px;
+	padding: 0 1rem;
 }
 
 article,
@@ -31,11 +32,13 @@ summary {
 }
 
 main {
-	margin-top: 2em;
+	margin: 2em 0 1em;
 }
 
 footer {
 	margin: 2em auto;
+	text-align: center;
+	font-size: .85em;
 }
 
 audio,
@@ -59,13 +62,19 @@ template,
 	display: none;
 }
 
+:focus {
+	outline: none;
+	border-color: #f8b332;
+}
+
 a {
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 	color: #f8b332;
+	border: 1px dashed transparent;
 }
 
-a:visited {
+a:active {
 	color: #cb3d25;
 }
 
@@ -154,6 +163,10 @@ hr {
 	overflow: visible;
 }
 
+address {
+	font-style: normal;
+}
+
 button,
 input,
 select,
@@ -169,11 +182,30 @@ optgroup {
 button,
 input {
 	overflow: visible;
+	line-height: 1.8;
+	border-radius: .3em;
+	padding: 0 .8em;
+}
+
+button:focus,
+input:focus {
+	outline: none;
 }
 
 button,
 select {
 	text-transform: none;
+}
+
+input {
+	background: #000;
+	border: 2px solid #cb3d25;
+	color: #fff;
+}
+
+button,
+input[type="submit"] {
+	color: #f8b332;
 }
 
 button,
@@ -249,7 +281,7 @@ textarea {
 }
 
 .logo {
-	display: block;
+	display: inline-block;
 	margin: 0 auto;
 }
 
@@ -265,4 +297,24 @@ nav > a {
 
 nav > a.active {
 	text-decoration: underline;
+}
+
+.contact {
+	display: inline-block;
+	margin: 2em auto;
+	text-align: left;
+	font-size: 1.1rem;
+	line-height: 1.4;
+}
+
+.signup {
+	margin: 0 0 3em;
+}
+
+.elsewhere {
+	margin: 2rem 0 3rem;
+}
+
+a[itemprop="hasMap"] {
+	font-size: .65em;
 }
