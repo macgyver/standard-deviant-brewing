@@ -7,6 +7,8 @@ import IndexPage from './pages/index';
 import MenuPage from './pages/menu';
 import PhotosPage from './pages/photos';
 
+console.log('generating html\n');
+
 [{
 	Page: IndexPage,
 	urlPath: ''
@@ -31,3 +33,5 @@ import PhotosPage from './pages/photos';
 		console.log(`saved ${fileName}\n${fileContents}\n`);
 	});
 });
+
+// todo: optimize/copy css and images
