@@ -3,6 +3,10 @@ import Html from '../components/html';
 
 export default function IndexPage(props) {
 	return (
-		<Html>index</Html>
+		<Html {...props}>index</Html>
 	);
 }
+
+IndexPage.propTypes = {
+	urlPath: React.PropTypes.string
+};

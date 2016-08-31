@@ -2,7 +2,6 @@ import React from 'react';
 import {baseUrl} from '../sdb';
 
 function Html(props) {
-	// todo: get from environment/config
 	return (
 		<html lang="en">
 			<head>
@@ -13,7 +12,7 @@ function Html(props) {
 				<meta name="viewport" content="width=device-width"/>
 
 				<link rel="icon" href="img/SDBLogo_SDBsigmaBlack.png"/>
-				<link rel="canonical" href={`${baseUrl}/`}/>
+				<link rel="canonical" href={`${baseUrl}/${props.urlPath}`}/>
 				<link rel="stylesheet" href="css/main.css"/>
 			</head>
 			<body>
@@ -24,7 +23,8 @@ function Html(props) {
 }
 
 Html.propTypes = {
-	children: React.PropTypes.node
+	children: React.PropTypes.node,
+	urlPath: React.PropTypes.string
 };
 
 export default Html;

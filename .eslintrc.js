@@ -1,6 +1,6 @@
 module.exports = {
 	"env": {
-		"browser": true,
+		"node": true,
 		"es6": true
 	},
 	"extends": ["eslint:recommended", "plugin:react/recommended"],
@@ -24,6 +24,7 @@ module.exports = {
 			"error",
 			"unix"
 		],
+		"no-console": 0, // because this is only run in node.js
 		"quotes": [
 			"error",
 			"single"
