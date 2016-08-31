@@ -10,7 +10,7 @@ function Html(props) {
 				<meta httpEquiv="x-ua-compatible" content="ie=edge"/>
 				<title>Standard Deviant Brewing</title>
 				<meta name="description" content=""/>
-				<meta name="viewport" content="width=512"/>
+				<meta name="viewport" content="width=device-width"/>
 
 				<link rel="icon" href="img/SDBLogo_SDBsigmaBlack.png"/>
 				<link rel="canonical" href={`${baseUrl}/`}/>
