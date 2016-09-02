@@ -11,7 +11,7 @@ import PhotosPage from './pages/photos';
 
 // import {paths} from './sdb';
 
-// todo: fancier/colorful output
+// todo: fancier/colorful output (https://github.com/marak/colors.js?)
 console.log('generating html\n');
 
 [{
@@ -43,5 +43,3 @@ console.log('generating html\n');
 		console.log(`saved ${fileName}\n${contents}\n`);
 	});
 });
-
-// todo: optimize/copy css and images
