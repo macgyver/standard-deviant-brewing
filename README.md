@@ -10,5 +10,6 @@ Super basic business page for Standard Deviant Brewing in San Francisco
 ### todo:
 - link to news articles on home page, when we get more
 - add photos page, until we get photos
-- copy/optimize images and css to `dst` folder in `main.js`
+- use sass
+- optimize images and css in `dst` folder
 - HMR in dev mode!
