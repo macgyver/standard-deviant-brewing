@@ -8,5 +8,5 @@ export default function PhotosPage(props) {
 }
 
 PhotosPage.propTypes = {
-	urlPath: React.PropTypes.string
+	path: React.PropTypes.string
 };

@@ -12,10 +12,10 @@ function Html(props) {
 				<meta name="viewport" content="width=device-width"/>
 
 				<link rel="icon" href="img/SDBLogo_SDBsigmaBlack.png"/>
-				<link rel="canonical" href={`${baseUrl}/${props.urlPath}`}/>
+				<link rel="canonical" href={`${baseUrl}/${props.path}`}/>
 				<link rel="stylesheet" href="css/main.css"/>
 			</head>
-			<body>
+			<body itemScope itemType="http://schema.org/Brewery">
 				{props.children}
 			</body>
 		</html>
@@ -24,7 +24,7 @@ function Html(props) {
 
 Html.propTypes = {
 	children: React.PropTypes.node,
-	urlPath: React.PropTypes.string
+	path: React.PropTypes.string
 };
 
 export default Html;

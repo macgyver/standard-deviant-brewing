@@ -8,5 +8,5 @@ export default function MenuPage(props) {
 }
 
 MenuPage.propTypes = {
-	urlPath: React.PropTypes.string
+	path: React.PropTypes.string
 };

@@ -1,3 +1,4 @@
+// todo: maybe rename to `index.js` or `make.js` or something..
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import fs from 'fs';
@@ -7,29 +8,33 @@ import IndexPage from './pages/index';
 import MenuPage from './pages/menu';
 import PhotosPage from './pages/photos';
 
+// import {paths} from './sdb';
+
+// todo: fancier/colorful output
 console.log('generating html\n');
 
 [{
 	Page: IndexPage,
-	urlPath: ''
+	path: 'index'
 }, {
 	Page: MenuPage,
-	urlPath: 'menu.html'
+	path: 'menu'
 }, {
 	Page: PhotosPage,
-	urlPath: 'photos.html'
+	path: 'photos'
 }].forEach(function(spec) {
-	let {Page, urlPath} = spec;
+	let {Page, path: name} = spec;
 	let html = (
-		<Page urlPath={urlPath}/>
+		<Page path={name}/>
 	);
-	let fileName = path.join(__dirname, '..', 'dst', urlPath||'index.html');
+	let fileName = path.join(__dirname, '..', 'dst', `${name}.html`);
 	let fileContents = '<!doctype html>' + ReactDOMServer.renderToStaticMarkup(html);
 
 	fs.writeFile(fileName, fileContents, function(err) {
 		if (err) {
 			return console.log(err);
 		}
+		// todo: pretty html print this output
 		console.log(`saved ${fileName}\n${fileContents}\n`);
 	});
 });
