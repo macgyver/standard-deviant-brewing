@@ -6,7 +6,7 @@ export default function Elsewhere(props) {
 		<div className="elsewhere">
 			<link itemProp="url" href={`${baseUrl}/`}/>
 			{elsewhere.map((e, i) => [
-				<span aria-hidden={true}>{i !== 0 ? ' • ' : null}</span>, // delimiter - todo: `aria-hidden` doesn't work yet?
+				<span aria-hidden={true}>{i !== 0 ? ' • ' : null}</span>, // delimiter
 				<a href={e.href} itemProp="sameAs" target="_blank" rel="noopener">{e.text}</a>
 			])}
 		</div>
