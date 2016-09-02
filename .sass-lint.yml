@@ -1,25 +1,24 @@
 files:
-	include: '**/*.s+(a|c)ss'
+  include: '**/*.s+(a|c)ss'
 options:
-	formatter: stylish
-	merge-default-rules: false
+  formatter: stylish
+  merge-default-rules: false
 rules:
-	# todo: resolve to uncomment this at some point
-	empty-line-between-blocks:
-	- 1
-	- allow-single-line-rulesets: 0
-	no-ids: 1
-	indentation:
-	- 1
-	- size: 'tab'
-	leading-zero:
-	- 1
-	- include: true
-	no-debug: 1
-	no-duplicate-properties: 1
-	no-empty-rulesets: 1
-	no-important: 1
-	no-trailing-zero: 1
-	no-transition-all: 1
-	one-declaration-per-line: 1
-	zero-unit: 1
+  empty-line-between-blocks:
+    - 1
+    - allow-single-line-rulesets: 0
+  no-ids: 1
+  indentation:
+    - 1
+    - size: 'tab'
+  leading-zero:
+    - 1
+    - include: true
+  no-debug: 1
+  no-duplicate-properties: 1
+  no-empty-rulesets: 1
+  no-important: 1
+  no-trailing-zero: 1
+  no-transition-all: 1
+  one-declaration-per-line: 1
+  zero-unit: 1
