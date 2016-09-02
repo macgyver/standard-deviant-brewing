@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import fs from 'fs';
 import path from 'path';
+import beautify from 'js-beautify';
 
 import IndexPage from './pages/index';
 import MenuPage from './pages/menu';
@@ -34,8 +35,12 @@ console.log('generating html\n');
 		if (err) {
 			return console.log(err);
 		}
-		// todo: pretty html print this output
-		console.log(`saved ${fileName}\n${fileContents}\n`);
+
+		let contents = beautify.html(fileContents, {
+			indent_with_tabs: true,
+			indent_inner_html: true
+		});
+		console.log(`saved ${fileName}\n${contents}\n`);
 	});
 });
 
