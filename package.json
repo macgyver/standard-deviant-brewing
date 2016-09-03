@@ -4,11 +4,11 @@
   "description": "Simple homepage for Standard Deviant Brewing",
   "main": "index.html",
   "scripts": {
-    "clean-dist": "rm -rf dst/*",
-    "make-html": "babel-node src/main.js",
-    "make-css": "cp -r css dst/css",
-    "make-img": "cp -r img dst/img",
-    "dist": "npm run clean-dist; npm run make-html; npm run make-css; npm run make-img"
+    "clean": "rm -rf dst/*",
+    "html": "babel-node src/main.js",
+    "css": "cp -r css dst/css",
+    "img": "cp -r img dst/img",
+    "dist": "npm run clean; npm run html & npm run css & npm run img; wait"
   },
   "author": "",
   "license": "ISC",

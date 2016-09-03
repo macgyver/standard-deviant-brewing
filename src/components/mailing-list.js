@@ -6,6 +6,7 @@ export default function MailingList(props) {
 			<form action="//standarddeviantbrewing.us8.list-manage.com/subscribe/post?u=373229c092a7c67afd678cbf5&amp;id=d1363a877c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate="noValidate">
 				<label htmlFor="mce-EMAIL">Signup for news &amp; events </label>
 				<input type="email" value="" name="EMAIL" className="email" id="mce-EMAIL" placeholder="email" required="" aria-required="true"/>
+				{' '}
 				<input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" className="button"/>
 				<div id="mce-responses" className="clear">
 					<div className="response" id="mce-error-response" style={{display: 'none'}}></div>
