@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rm -rf docs/*",
     "html": "babel-node src/main.js",
-    "css": "postcss -c postcss.json -d docs/css css/main.css",
-    "img": "cp -r img docs/img",
+    "css": "postcss -c postcss.json -d docs/css css/**/*.css",
+    "img": "imagemin img/**/* -o docs/img",
     "dist": "npm run clean; npm run html & npm run css & npm run img; wait"
   },
   "author": "",
@@ -24,6 +24,7 @@
     "eslint": "^3.4.0",
     "eslint-plugin-react": "^6.2.0",
     "fb-watchman": "^1.9.0",
+    "imagemin-cli": "^3.0.0",
     "js-beautify": "^1.6.4",
     "node-sass": "^3.8.0",
     "node-sass-json-importer": "^2.1.1",
