@@ -4,10 +4,10 @@
   "description": "Simple homepage for Standard Deviant Brewing",
   "main": "index.html",
   "scripts": {
-    "clean": "rm -rf dst/*",
+    "clean": "rm -rf docs/*",
     "html": "babel-node src/main.js",
-    "css": "cp -r css dst/css",
-    "img": "cp -r img dst/img",
+    "css": "cp -r css docs/css",
+    "img": "cp -r img docs/img",
     "dist": "npm run clean; npm run html & npm run css & npm run img; wait"
   },
   "author": "",

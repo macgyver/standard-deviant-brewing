@@ -28,7 +28,7 @@ console.log('generating html\n');
 	let html = (
 		<Page path={name}/>
 	);
-	let fileName = path.join(__dirname, '..', 'dst', `${name}.html`);
+	let fileName = path.join(__dirname, '..', 'docs', `${name}.html`);
 	let fileContents = '<!doctype html>' + ReactDOMServer.renderToStaticMarkup(html);
 
 	fs.writeFile(fileName, fileContents, function(err) {
