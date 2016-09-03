@@ -28,4 +28,27 @@ export const elsewhere = [{
 	text: 'ratebeer',
 }/*Twitter*/];
 
-export default {baseUrl, paths, map, elsewhere};
+// todo: store dates as unix timestamps?
+export const news = [{
+	url: 'http://sfist.com/2016/08/31/go_drink_this_standard_deviant_brew.php',
+	headline: 'Go Drink This: Standard Deviant Brewing Extra Pale Ale',
+	published: 'AUG 31, 2016 12:40 PM PST',
+	source: 'sfist'
+},{
+	url: 'http://sf.eater.com/2016/8/2/12359304/standard-deviant-brewing-open-mission',
+	headline: 'Standard Deviant Brewing Now Softly Open in the Mission',
+	published: 'Aug 2, 2016, 11:45a PST',
+	source: 'Eater SF'
+},{
+	url: 'http://hoodline.com/2016/08/now-open-in-the-mission-standard-deviant-a-craft-brewery',
+	headline: 'Now Open In The Mission: Standard Deviant, A Craft Brewery',
+	published: 'Mon. August 1, 2016, 3:39pm PST',
+	source: 'Hoodline'
+},{
+	url: 'http://hoodline.com/2016/06/standard-deviant-brewing-opening-14th-and-mission',
+	headline: 'Standard Deviant Brewing To Open Soon At 14th & Mission',
+	published: 'Mon. June 6, 2016, 12:48pm PST',
+	source: 'Hoodline'
+}];
+
+export default {baseUrl, paths, map, elsewhere, news};

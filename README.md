@@ -8,8 +8,7 @@ Super basic business page for Standard Deviant Brewing in San Francisco
 3. `npm run dist`
 
 ### todo:
-- link to news articles on home page, when we get more
-- add photos page, until we get photos
-- use sass
-- optimize images and css in `dst` folder
+- uncomment news articles at some point?
+- add photos page, when we get photos
+- use sass?
 - HMR in dev mode!

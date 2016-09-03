@@ -1,10 +1,21 @@
 import React from 'react';
+import {news} from '../sdb';
+
+// todo:
+// - some microformat for this?
+// - target _blank rel noopener?
 
 export default function News(props) {
 	return (
 		<div className='news' {...props}>
 			<h2>News</h2>
-			<a href="http://hoodline.com/2016/08/now-open-in-the-mission-standard-deviant-a-craft-brewery">hoodline</a>
+			{news.map((n, i) => (
+				<a key={i} href={n.url}>
+					<span className='headline'>{n.headline}</span>{' '}
+					<span className='source'>{n.source}</span>{' '}
+					<span className='published'>{n.published}</span>
+				</a>
+			))}
 		</div>
 	);
 }
