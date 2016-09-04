@@ -1,8 +1,11 @@
 {
 	"use": [
 		"postcss-import",
-		"postcss-custom-properties",
+		"postcss-cssnext",
 		"postcss-combine-duplicated-selectors",
 		"cssnano"
-	]
+	],
+	"postcss-cssnext": {
+		"warnForDuplicates": false
+	}
 }

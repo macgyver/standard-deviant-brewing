@@ -14,3 +14,4 @@ Super basic business page for Standard Deviant Brewing in San Francisco
 - postcss remove overridden rules
 - add css/style lint?
 - sort news by formatted date
+- deal with double-autoprefier better than disabling "warnForDuplicates"
