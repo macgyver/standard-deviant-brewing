@@ -1,3 +1,8 @@
 {
-	"use": ["cssnano"]
+	"use": [
+		"postcss-import",
+		"postcss-custom-properties",
+		"postcss-combine-duplicated-selectors",
+		"cssnano"
+	]
 }

@@ -10,5 +10,7 @@ Super basic business page for Standard Deviant Brewing in San Francisco
 ### todo:
 - uncomment news articles at some point?
 - add photos page, when we get photos
-- use sass?
-- HMR in dev mode!
+- dev mode with HMR would be rad!
+- postcss remove overridden rules
+- add css/style lint?
+- sort news by formatted date
