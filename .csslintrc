@@ -1,0 +1,6 @@
+# we use postcss inline imports
+--ignore=import
+
+# todo: remove when css variable properties are supported
+# https://github.com/CSSLint/parser-lib/issues/120
+# --ignore=empty-rules

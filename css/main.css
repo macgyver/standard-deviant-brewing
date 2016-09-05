@@ -1,14 +1,15 @@
 @import "normalize.css/normalize.css"; /* found in node_modules */
 
 :root {
-	--black: #000;
-	--red: #cb3d25;
+	--white: #fff;
+	--black:  #000;
+	--red:    #cb3d25;
 	--orange: #f8b332;
 }
 
 html {
 	background: var(--black);
-	color: #fff;
+	color: var(--white);
 	font-size: 16px;
 }
 
@@ -70,7 +71,7 @@ input:focus {
 input {
 	background: #000;
 	border: 2px solid var(--red);
-	color: #fff;
+	color: var(--white);
 }
 
 button,
