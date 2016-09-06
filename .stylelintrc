@@ -3,6 +3,8 @@
 	"rules": {
 		"declaration-colon-space-after": null,
 		"indentation": "tab",
-		"number-leading-zero": null
+		"number-leading-zero": null,
+		"selector-list-comma-newline-after": null,
+		"comment-whitespace-inside": null
 	}
 }

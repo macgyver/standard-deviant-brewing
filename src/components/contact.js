@@ -3,7 +3,7 @@ import {map} from '../sdb';
 
 export default function Contact(props) {
 	return (
-		<div className="contact">
+		<section className="contact">
 			<address itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
 				<span itemProp="streetAddress">280 14th Street</span>{' '}
 				<span itemProp="addressLocality">San Francisco</span>,{' '}
@@ -24,6 +24,6 @@ export default function Contact(props) {
 			<time itemProp="openingHours" dateTime="Sun 12:00-21:00">Sun 12-9</time>
 			<br/>
 			<a itemProp="telephone" href="tel:+14155902250">(415) 590-2550</a>
-		</div>
+		</section>
 	);
 }

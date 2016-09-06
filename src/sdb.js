@@ -49,6 +49,11 @@ export const news = [{
 	headline: 'Standard Deviant Brewing To Open Soon At 14th & Mission',
 	published: 'Mon. June 6, 2016, 12:48pm PST',
 	source: 'Hoodline'
-}];
+}].map(n => {
+	n.timestamp = Date.parse(n.published);
+	return n;
+}).sort(function(a, b) {
+	return a.timestamp > b.timestamp ? 1 : -1;
+});
 
 export default {baseUrl, paths, map, elsewhere, news};

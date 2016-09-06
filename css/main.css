@@ -11,6 +11,7 @@ html {
 	background: var(--black);
 	color: var(--white);
 	font-size: 16px;
+	line-height: 1.4;
 }
 
 body {
@@ -19,19 +20,27 @@ body {
 	padding: 0 1rem;
 }
 
-main {
-	margin: 2em 0 1em;
+header, section, footer {
+	margin: 1.5em 0 3em;
 }
 
 footer {
-	margin: 2em auto;
 	text-align: center;
 	font-size: .85em;
+}
+
+h2 {
+	margin: 0 0 .4em;
 }
 
 :focus {
 	outline: none;
 	border-color: var(--orange);
+}
+
+a, button {
+	transition-property: outline, border-color, color;
+	transition-duration: 150ms;
 }
 
 a {
@@ -41,30 +50,13 @@ a {
 
 a:active {
 	color: var(--red);
+	border-color: var(--red);
 }
 
-h1 {
-	margin: .67em 0 .33em;
-}
-
-h2 {
-	margin: .83em 0 .42em;
-}
-
-address {
-	display: inline-block;
-	font-style: normal;
-}
-
-button,
-input {
+button, input {
 	line-height: 1.8;
 	border-radius: .3em;
 	padding: 0 .8em;
-}
-
-button:focus,
-input:focus {
 	outline: none;
 }
 
@@ -74,9 +66,17 @@ input {
 	color: var(--white);
 }
 
-button,
-input[type="submit"] {
+button, input[type="submit"] {
 	color: var(--orange);
+}
+
+address {
+	display: inline-block;
+	font-style: normal;
+}
+
+header {
+	text-align: center;
 }
 
 .logo {
@@ -87,10 +87,6 @@ input[type="submit"] {
 .logo img {
 	max-width: 100%;
 	height: auto;
-}
-
-header {
-	text-align: center;
 }
 
 nav > a {
@@ -104,21 +100,31 @@ nav > a.active {
 }
 
 .contact {
-	display: inline-block;
-	margin: 2em auto;
-	text-align: left;
 	font-size: 1.1rem;
-	line-height: 1.4;
 }
 
-.signup {
-	margin: 0 0 3em;
-}
-
-.elsewhere {
-	margin: 2rem 0 3rem;
-}
-
-a[itemprop="hasMap"] {
+[itemprop="hasMap"] {
 	font-size: .65em;
+}
+
+.news a {
+	display: inline-block;
+	margin: .5em 0 1em;
+}
+
+.news nobr {
+	display: block;
+}
+
+.source, .published {
+	font-size: .75em;
+}
+
+.source {
+	float: left;
+	margin-right: 1em;
+}
+
+.published {
+	float: right;
 }

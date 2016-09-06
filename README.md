@@ -12,9 +12,7 @@ Style should be linted by [stylelint](https://github.com/stylelint/stylelint/blo
 I would have preferred [CSSLint](https://github.com/CSSLint/csslint/) because it's not managed by Facebook but it chokes on css variables right now
 
 ### todo:
-- uncomment news articles at some point?
 - add photos page, when we get photos
 - dev mode with HMR would be rad!
-- make your own postcss plugin to remove overridden rules
-- sort news by formatted date
+- maybe make own postcss plugin to remove overridden rules?
 - deal with double-autoprefixer better than disabling "warnForDuplicates"

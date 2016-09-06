@@ -16,7 +16,7 @@ export default function IndexPage(props) {
 
 				<Contact/>
 
-				<News hidden/>
+				<News />
 
 				<MailingList/>
 
