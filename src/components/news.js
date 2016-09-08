@@ -1,5 +1,5 @@
 import React from 'react';
-import {news} from '../sdb';
+import {newsArticles} from '../sdb';
 
 // todo:
 // - some microformat for this? at least for the published timestamp..
@@ -10,7 +10,7 @@ export default function News(props) {
 	return (
 		<section className='news' {...props}>
 			<h2>News</h2>
-			{news.map((n, i) => [
+			{newsArticles.map((n, i) => [
 				i === 0 ? null : <br/>,
 				<a key={i} href={n.url}>
 					<span className='headline'>{n.headline}</span>{' '}

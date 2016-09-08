@@ -8,7 +8,7 @@ export const map = {
 	iframeUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.9200423402776!2d-122.42164368468259!3d37.768472979760666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e21474dc681%3A0xcab142f3b60e8df3!2sStandard+Deviant+Brewing!5e0!3m2!1sen!2sus!4v1471896422236'
 };
 
-export const elsewhere = [{
+export const externalLinks = [{
 	href: 'https://www.instagram.com/standarddeviantbrewing/',
 	text: 'Instagram',
 },{
@@ -29,7 +29,7 @@ export const elsewhere = [{
 }/*Twitter*/];
 
 // todo: store dates as unix timestamps?
-export const news = [{
+export const newsArticles = [{
 	url: 'http://sfist.com/2016/08/31/go_drink_this_standard_deviant_brew.php',
 	headline: 'Go Drink This: Standard Deviant Brewing Extra Pale Ale',
 	published: 'AUG 31, 2016 12:40 PM PST',
@@ -56,4 +56,4 @@ export const news = [{
 	return a.timestamp > b.timestamp ? 1 : -1;
 });
 
-export default {baseUrl, paths, map, elsewhere, news};
+export default {baseUrl, paths, map, externalLinks, newsArticles};
