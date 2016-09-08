@@ -26,7 +26,7 @@ export const externalLinks = [{
 },{
 	href: 'http://www.ratebeer.com/brewers/standard-deviant-brewing/28194/',
 	text: 'ratebeer',
-}/*Twitter*/];
+},/* todo: Twitter? */];
 
 // todo: store dates as unix timestamps?
 export const newsArticles = [{
@@ -50,9 +50,11 @@ export const newsArticles = [{
 	published: 'Mon. June 6, 2016, 12:48pm PST',
 	source: 'Hoodline'
 }].map(n => {
+	// add timestamp key generated from string date - todo: this is probably brittle
 	n.timestamp = Date.parse(n.published);
 	return n;
 }).sort(function(a, b) {
+	// sort by timestamp, descending (reverse chronological)
 	return a.timestamp > b.timestamp ? 1 : -1;
 });
 
