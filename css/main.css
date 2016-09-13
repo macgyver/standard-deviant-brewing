@@ -103,6 +103,22 @@ nav > a.active {
 	font-size: 1.1rem;
 }
 
+.contact [itemProp="telephone"] {
+	display: block;
+}
+
+.hours {
+	float: right;
+	transform: translateY(-0.5rem); /* lines up with the address text */
+	padding: .5rem 1rem;
+	border: 1px solid var(--red);
+	border-radius: .5rem;
+}
+
+.hours time {
+	display: block;
+}
+
 [itemprop="hasMap"] {
 	font-size: .65em;
 }
