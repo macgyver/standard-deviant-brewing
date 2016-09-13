@@ -1,5 +1,5 @@
 import React from 'react';
-import {map} from '../sdb';
+import {map, contactEmail} from '../sdb';
 
 export default function Contact(props) {
 	return (
@@ -24,6 +24,11 @@ export default function Contact(props) {
 			<time itemProp="openingHours" dateTime="Sun 12:00-21:00">Sun 12-9</time>
 			<br/>
 			<a itemProp="telephone" href="tel:+14155902250">(415) 590-2550</a>
+			<br/>
+			<small>
+				for inquires contact{' '}
+				<a itemProp="email" href={`mailto:${contactEmail}`}>{contactEmail}</a>
+			</small>
 		</section>
 	);
 }
