@@ -58,4 +58,14 @@ export const newsArticles = [{
 	return a.timestamp > b.timestamp ? 1 : -1;
 });
 
-export default {baseUrl, paths, map, externalLinks, newsArticles};
+export const beers = [
+	'Kolsch',
+	'Belgian Blonde',
+	'Callista Pale Ale',
+	'Extra Pale Ale',
+	'Altbier',
+	'Porter',
+	'IPA'
+];
+
+export default {baseUrl, paths, map, externalLinks, newsArticles, beers};
