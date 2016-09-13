@@ -101,6 +101,7 @@ nav > a.active {
 
 .contact {
 	font-size: 1.1rem;
+	text-align: center;
 }
 
 .contact [itemProp="telephone"] {
