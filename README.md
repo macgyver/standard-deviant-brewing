@@ -16,3 +16,4 @@ I would have preferred [CSSLint](https://github.com/CSSLint/csslint/) because it
 - add photos page, when we get photos
 - dev mode with HMR would be rad!
 - deal with double-autoprefixer better than disabling "warnForDuplicates"
+- 301 to remove `www.`
