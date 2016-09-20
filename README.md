@@ -4,8 +4,7 @@ Super basic business page for Standard Deviant Brewing in San Francisco
 
 ## Usage
 1. `npm install`
-2. `npm run dist` - the built site will be put into the `/docs` folder
-    because we have no better place to host it right now than github pages
+2. `npm run dist` - the built site will be put into the `/docs` folder so we can use github pages as a staging area
 3. `open file://$(pwd)/docs/index.html`
 
 ### Trivia
