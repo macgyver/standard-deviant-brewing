@@ -104,7 +104,7 @@ nav > a.active {
 	text-align: center;
 }
 
-.contact [itemProp="telephone"] {
+.tel {
 	display: block;
 }
 
@@ -118,10 +118,6 @@ nav > a.active {
 
 .hours time {
 	display: block;
-}
-
-[itemprop="hasMap"] {
-	font-size: .65em;
 }
 
 .news a {

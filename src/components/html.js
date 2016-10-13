@@ -1,5 +1,6 @@
 import React from 'react';
 import {baseUrl} from '../sdb';
+import StructuredData from './structured-data';
 
 function Html(props) {
 	return (
@@ -14,8 +15,9 @@ function Html(props) {
 				<link rel="icon" href="img/SDBLogo_SDBsigmaBlack.png"/>
 				<link rel="canonical" href={`${baseUrl}/${props.path}`}/>
 				<link rel="stylesheet" href="css/main.css"/>
+				<StructuredData/>
 			</head>
-			<body itemScope itemType="http://schema.org/Brewery">
+			<body>
 				{props.children}
 				{/*<script src="js/main.js"></script>*/}
 

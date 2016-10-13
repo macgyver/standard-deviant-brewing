@@ -3,7 +3,7 @@ import {beers} from '../sdb';
 
 export default function Menu(props) {
 	return (
-		<div itemProp="menu">
+		<div>
 			<h2 hidden>Menu</h2>
 			We have {beers.length} beers on tap, with new beers coming soon.
 			<ul>

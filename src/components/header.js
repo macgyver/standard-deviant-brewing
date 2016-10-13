@@ -23,8 +23,8 @@ export default function Header(props) {
 	return (
 		<header>
 			<a className="logo" href=".">
-				<img itemProp="logo" width="350" height="429" src="img/SDBLogoBIG_YellowOnBlack.png" alt="Standard Deviant Brewing"/>
-				<h1 itemProp="name" hidden={true}>Standard Deviant Brewing</h1>
+				<img width="350" height="429" src="img/SDBLogoBIG_YellowOnBlack.png" alt="Standard Deviant Brewing"/>
+				<h1 hidden={true}>Standard Deviant Brewing</h1>
 			</a>
 
 			<nav>

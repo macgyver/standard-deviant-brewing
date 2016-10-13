@@ -12,7 +12,7 @@ export default function IndexPage(props) {
 		<Html {...props}>
 			<Header {...props}/>
 			<main>
-				{/* <p itemProp="description">FPO description goes here FPO</p> */}
+				{/* <p>FPO description goes here FPO</p> */}
 
 				<Contact/>
 
